@@ -43,6 +43,7 @@
         "drupal/token_custom": "^1.0@alpha",
         "drupal/twig_field_value": "^1.1",
         "drupal/twig_tweak": "^2.1",
+        "drush/drush": "^9.5",
         "enyo/dropzone": "^4.3",
         "harvesthq/chosen": "^1.8"
     },

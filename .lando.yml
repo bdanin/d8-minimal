@@ -16,9 +16,6 @@ services:
 tooling:
   git:
     service: appserver
-  blt:
-    service: appserver
-    cmd: /app/vendor/acquia/blt/bin/blt
   gem:
     service: ruby
   ruby:

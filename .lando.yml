@@ -1,0 +1,43 @@
+name: d8
+recipe: drupal8
+config:
+  webroot: docroot
+  php: '7.0'
+  xdebug: true
+
+services:
+  database:
+    type: mysql:5.6
+  ruby:
+    type: ruby:2.4
+    build:
+    - "gem install bundler"
+
+tooling:
+  git:
+    service: appserver
+  blt:
+    service: appserver
+    cmd: /app/vendor/acquia/blt/bin/blt
+  gem:
+    service: ruby
+  ruby:
+    service: ruby
+  bundler:
+    service: ruby
+  bundle:
+    service: ruby
+  update:
+    service: appserver
+    description: "Builds local Drupal dependencies, runs database updates, imports config"
+    cmd: echo Updating your local dependencies and import config …
+
+events:
+  post-start:
+  - appserver: composer global require hirak/prestissimo
+  - appserver: cd $LANDO_MOUNT && composer install
+  post-db-import:
+  - appserver: cd $LANDO_WEBROOT && drush cr
+  post-update:
+  - appserver: cd $LANDO_MOUNT && composer install
+  - appserver: cd $LANDO_WEBROOT && drush updb -n && drush cim sync -n && drush cr

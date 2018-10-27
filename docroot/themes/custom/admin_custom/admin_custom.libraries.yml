@@ -7,4 +7,7 @@ theme_base:
   js:
     src/js/admin.js: {}
   dependencies:
+  - core/drupal
+  - core/drupalSettings
   - core/jquery
+  - core/jquery.once

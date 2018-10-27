@@ -1,9 +1,9 @@
 (function ($) {
-  Drupal.behaviors.admin_uccollege= {
+  Drupal.behaviors.admin_custom= {
     attach: function (context, settings) {
 
       // create a toggle to make it easier for authors to focus on editing content
-      $('#authoring-details-toggle', context).once('admin_uccollege').click(function () {
+      $('#authoring-details-toggle', context).once('admin_custom').click(function () {
         $('.layout-region-node-secondary').slideToggle();
         $(this).toggleClass('active');
       });

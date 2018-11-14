@@ -1,0 +1,9 @@
+uuid: f4d8fbee-7b64-4682-ae5f-b3200e667074
+langcode: en
+status: true
+dependencies: {  }
+id: components
+label: Components
+icon_uuid: null
+description: 'Component inserter, theme.'
+behavior_plugins: {  }

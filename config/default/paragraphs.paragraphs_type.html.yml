@@ -1,0 +1,9 @@
+uuid: bf21b75d-5b69-4437-9fce-9c70799a0807
+langcode: en
+status: true
+dependencies: {  }
+id: html
+label: HTML
+icon_uuid: null
+description: 'Basic HTML component.'
+behavior_plugins: {  }

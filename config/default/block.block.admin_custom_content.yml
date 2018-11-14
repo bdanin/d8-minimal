@@ -1,0 +1,22 @@
+uuid: 627c0cff-e166-42a4-b31f-9419dc6dab50
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - admin_custom
+_core:
+  default_config_hash: 80N66GdzEvwqi1m-_GZ-ulkk8AJG9beoXcZ4-pMVKjI
+id: admin_custom_content
+theme: admin_custom
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

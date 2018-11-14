@@ -1,0 +1,22 @@
+uuid: 45b8c83a-3d21-43bb-a400-afaf8547e489
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - admin_custom
+_core:
+  default_config_hash: 862sIulDdHmF0vBU1s2j2_a_CwkxursrL0pIrMDzzOg
+id: admin_custom_login
+theme: admin_custom
+region: content
+weight: 10
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

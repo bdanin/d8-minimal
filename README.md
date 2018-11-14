@@ -10,7 +10,7 @@ By Brian Danin
 Clone this repo, and then run:
 
 ```bash
-lando start && lando composer install
+lando start
 ```
 
 Enter the default Drupal 8 credentials:

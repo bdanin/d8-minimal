@@ -1,0 +1,14 @@
+uuid: f103951c-1486-4229-ad23-b7bfa81b63b0
+langcode: en
+status: true
+dependencies: {  }
+id: menu_example
+label: 'Main Navigation'
+context:
+  show_warning: true
+  group:
+    language: false
+menu:
+  path: /admin/config/main-nav
+  weight: 0
+  description: 'Main Navigation'

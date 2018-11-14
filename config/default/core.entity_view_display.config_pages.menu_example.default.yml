@@ -1,0 +1,24 @@
+uuid: e9a1d787-3b9b-45da-8ee6-7c6e51fb909a
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.menu_example
+    - field.field.config_pages.menu_example.field_navigation_sections
+  module:
+    - entity_reference_revisions
+id: config_pages.menu_example.default
+targetEntityType: config_pages
+bundle: menu_example
+mode: default
+content:
+  field_navigation_sections:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

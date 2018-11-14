@@ -1,0 +1,40 @@
+uuid: ddadb21e-d80a-4aee-b147-d21b1d21db90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_links
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.nav_section
+  module:
+    - entity_reference_revisions
+id: paragraph.nav_section.field_sub_links
+field_name: field_sub_links
+entity_type: paragraph
+bundle: nav_section
+label: Sub-Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      link: link
+    target_bundles_drag_drop:
+      components:
+        weight: 5
+        enabled: false
+      html:
+        weight: 6
+        enabled: false
+      link:
+        enabled: true
+        weight: 7
+      nav_section:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

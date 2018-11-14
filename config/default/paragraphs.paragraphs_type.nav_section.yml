@@ -1,0 +1,9 @@
+uuid: c15c3f3a-3ef6-46db-8ab5-dad31f8f1db5
+langcode: en
+status: true
+dependencies: {  }
+id: nav_section
+label: 'Nav Section'
+icon_uuid: null
+description: 'Navigation Sections'
+behavior_plugins: {  }

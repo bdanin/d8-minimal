@@ -13,13 +13,15 @@ Clone this repo, and then run:
 lando start
 ```
 
+Navigate to the resulting URL, and install the Drupal database.
+
 Enter the default Drupal 8 credentials:
 - 'database' => 'drupal8'
 - 'username' => 'drupal8'
 - 'password' => 'drupal8'
 - 'host' => 'database'
 
-Install using the minimal profile.
+Install using the **minimal** profile.
 
 ### First Config:Import
 First, config_suite needs to be turned on, please run:
@@ -66,4 +68,14 @@ lando drush en PROJECT_NAME -n
 Export this to code:
 ```bash
 lando drush cex sync -n
+```
+
+### Export (or Import) a Database
+```bash
+lando db-export
+```
+
+If you already have a database file:
+```bash
+lando db-import name-of-file.ext
 ```

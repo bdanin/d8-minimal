@@ -10,22 +10,10 @@ function admin_custom_preprocess_page(&$vars)
   $cp_view = \Drupal::entityTypeManager()->getViewBuilder('config_pages');
 
 // global_alert
-  $vars['global_alert'] = '';
-  $global_alert = current($cp_store->loadByProperties(['type' => 'global_alert']));
-  if ($global_alert !== false) {
-    $toggle = $global_alert->get('field_cp_boolean')->value;
-    if ($toggle) {
-      $vars['global_alert'] = $cp_view->view($global_alert, 'default');
-    }
+  $vars['global_nav'] = '';
+  $global_nav = current($cp_store->loadByProperties(['type' => 'menu_example']));
+  if ($global_nav !== false) {
+    $vars['global_nav'] = $cp_view->view($global_nav, 'default');
   }
 
-  $masthead = current($cp_store->loadByProperties(['type' => 'masthead']));
-  if ($masthead !== false) {
-    $vars['masthead'] = $cp_view->view($masthead, 'default');
-  }
-
-  $footer = current($cp_store->loadByProperties(['type' => 'footer']));
-  if ($footer !== false) {
-    $vars['footer'] = $cp_view->view($footer, 'default');
-  }
 }

@@ -55,6 +55,11 @@ chmod -R 775 docroot/sites/default
 ```
 and then re-run the `lando drupal site:mode dev` command.
 
+To find out your local URL and more info:
+```bash
+lando info
+```
+
 ### Add a Project
 ```bash
 lando composer install drupal/PROJECT_NAME

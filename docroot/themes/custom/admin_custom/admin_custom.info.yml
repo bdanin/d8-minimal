@@ -1,0 +1,8 @@
+name: Custom Admin Theme
+type: theme
+base theme: adminimal_theme
+description: 'Admin theme, sub-theme of Adminimal'
+core: 8.x
+
+libraries:
+- admin_custom/theme_base

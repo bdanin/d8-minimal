@@ -1,0 +1,14 @@
+uuid: 288d0090-a3f2-47ee-bf17-f94178e7e8db
+langcode: en
+status: true
+dependencies: {  }
+name: 'Plain, Custom'
+format: plain_custom
+weight: 0
+filters:
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: true
+    weight: -10
+    settings: {  }

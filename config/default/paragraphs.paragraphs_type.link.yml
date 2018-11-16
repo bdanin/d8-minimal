@@ -1,0 +1,9 @@
+uuid: 8656d082-9e96-44d5-852c-90f109a5e3b4
+langcode: en
+status: true
+dependencies: {  }
+id: link
+label: Link
+icon_uuid: null
+description: 'Example of a re-usable paragraph.'
+behavior_plugins: {  }

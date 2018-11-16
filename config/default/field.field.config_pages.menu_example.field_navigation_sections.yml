@@ -1,0 +1,40 @@
+uuid: 30ab1914-3737-48d8-8d6d-1906e79a2b5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.menu_example
+    - field.storage.config_pages.field_navigation_sections
+    - paragraphs.paragraphs_type.nav_section
+  module:
+    - entity_reference_revisions
+id: config_pages.menu_example.field_navigation_sections
+field_name: field_navigation_sections
+entity_type: config_pages
+bundle: menu_example
+label: 'Navigation Sections'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      nav_section: nav_section
+    target_bundles_drag_drop:
+      components:
+        weight: 5
+        enabled: false
+      html:
+        weight: 6
+        enabled: false
+      link:
+        weight: 7
+        enabled: false
+      nav_section:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

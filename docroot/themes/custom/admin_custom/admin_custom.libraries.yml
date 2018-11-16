@@ -1,0 +1,13 @@
+theme_base:
+  version: 1.x
+  css:
+    base:
+      # custom styles below
+      dist/css/styles.css: {}
+  js:
+    src/js/admin.js: {}
+  dependencies:
+  - core/drupal
+  - core/drupalSettings
+  - core/jquery
+  - core/jquery.once

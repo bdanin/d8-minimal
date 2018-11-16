@@ -1,0 +1,7 @@
+/* global, base set of custom styles */
+
+.adminimal { // scope to this theme
+  h1 {
+    color: $color-secondary;
+  }
+}

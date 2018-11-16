@@ -1,0 +1,26 @@
+uuid: 6bc24502-fa1d-414b-a4f6-40ad717a2e9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_text
+    - paragraphs.paragraphs_type.link
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_custom: plain_custom
+    plain_text: '0'
+id: paragraph.link.field_link_text
+field_name: field_link_text
+entity_type: paragraph
+bundle: link
+label: 'Link Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

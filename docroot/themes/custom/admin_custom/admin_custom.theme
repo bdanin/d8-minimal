@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function admin_custom_preprocess_page(&$vars)
+{
+// get config_pages storage
+  $cp_store = \Drupal::entityTypeManager()->getStorage('config_pages');
+  $cp_view = \Drupal::entityTypeManager()->getViewBuilder('config_pages');
+
+// global_alert
+  $vars['global_nav'] = '';
+  $global_nav = current($cp_store->loadByProperties(['type' => 'menu_example']));
+  if ($global_nav !== false) {
+    $vars['global_nav'] = $cp_view->view($global_nav, 'default');
+  }
+
+}

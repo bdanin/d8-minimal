@@ -1,0 +1,34 @@
+uuid: fcbcdee6-8a8d-4968-b420-683355354988
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_component_inserter
+    - node.type.page
+    - paragraphs.paragraphs_type.components
+  module:
+    - entity_reference_revisions
+id: node.page.field_component_inserter
+field_name: field_component_inserter
+entity_type: node
+bundle: page
+label: 'Component Inserter'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      components: components
+    target_bundles_drag_drop:
+      components:
+        enabled: true
+        weight: 3
+      link:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions
